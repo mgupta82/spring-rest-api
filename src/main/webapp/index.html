@@ -1,0 +1,87 @@
+<html>
+
+<head>
+<style>
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+</style>
+</head>
+
+<body>
+<h2>This is Web API for Toy Robot</h2>
+
+<table>
+	<tr>
+		<th>Operation</th>
+		<th>Method</th>
+		<th>URL</th>
+		<th>Request Body</th>
+		<th>Expected Response</th>
+	</tr>
+	
+	<tr>
+		<td>Create</td>
+		<td>POST</td>
+		<td>webapi/robot/test</td>
+		<td></td>
+		<td>Created</td>	
+	</tr>
+
+	<tr>
+		<td>List</td>
+		<td>GET</td>
+		<td>webapi/robot/list</td>
+		<td></td>
+		<td>JSON Array of Robot Name</td>	
+	</tr>
+	
+	<tr>
+		<td>Place</td>
+		<td>POST</td>
+		<td>webapi/test/position</td>
+		<td>{"xpos":2,"ypos":3,"angle":"NORTH"}</td>
+		<td></td>	
+	</tr>
+	
+	<tr>
+		<td>Report</td>
+		<td>GET</td>
+		<td>webapi/test/position</td>
+		<td></td>
+		<td>{"xpos":2,"ypos":3,"angle":"NORTH"}</td>	
+	</tr>
+	
+	<tr>
+		<td>left</td>
+		<td>PUT</td>
+		<td>webapi/test/position/left</td>
+		<td></td>
+		<td></td>	
+	</tr>
+	
+	<tr>
+		<td>right</td>
+		<td>PUT</td>
+		<td>webapi/test/position/right</td>
+		<td></td>
+		<td></td>	
+	</tr>					
+
+	<tr>
+		<td>move</td>
+		<td>PUT</td>
+		<td>webapi/test/position/move</td>
+		<td></td>
+		<td></td>	
+	</tr>
+
+</table>
+
+
+</body>
+</html>
